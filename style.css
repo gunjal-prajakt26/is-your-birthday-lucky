@@ -1,11 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root {
+    --primary : #bae6fd;
+    --secondary : #38bdf8;
+    --text : #475569;
+}
 
 
 body{
+
+    background-color: var(--primary);
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--text)
+}
+
+.container {
+
+    width: 50%;
+    max-width: 500px;
     text-align: center;
-    padding: 2rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    background-color: var(--secondary);
+}
+
+label, .output-div {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: .5rem;
+}
+
+input {
+    width: 60%;
+    padding: 1rem;
+    margin: auto;
+}
+button {
+    padding: 1rem ;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 10px ;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: var(--text);
+    color: white;
+}
+
+
+button:focus{
+    opacity: 1px;
 }
 
 .output-div{
+    /* margin-top: 0rem; */
     display: block;
-    padding: 1rem;
+    padding: 0.7rem;
+}
+
+.inline-list {
+    color: white;
+    display: inline;
+    list-style: none;
+}
+
+footer{
+    background-color: var(--text);
+    padding: .7rem 0rem;
+    color: white; 
+    text-align: center;
+    margin-top: 1rem;
+
+    width: 100%;
+}
+
+footer div {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+footer ul {
+    padding-inline-start: 0px;
+}
+
+footer img{
+    background-color:white;
+    border-radius: 0.2rem;
+}
+a {
+    padding-left: 1rem;
+    text-decoration: none;
+    color: white;
 }
